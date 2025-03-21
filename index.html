@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' https://via.placeholder.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' https://via.placeholder.com;">
+    
+<!-- Mobile responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page description (important for SEO) -->
+<meta name="description" content="A website dedicated to physics tutorials, experiments, and research.">
+
+<!-- Keywords (not very useful for Google but can help other search engines) -->
+<meta name="keywords" content="physics, science, education, research, experiments">
+
+<!-- Author of the page -->
+<meta name="author" content="Your Name">
+
+<!-- Robots meta tag (Controls indexing and link following) -->
+<meta name="robots" content="index, follow">
+<!-- Open Graph (OG) tags for Facebook, LinkedIn, etc. -->
+    <meta property="og:title" content="Physics Website - Learn & Explore">
+    <meta property="og:description" content="Explore physics through tutorials, experiments, and in-depth explanations.">
+    <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/jpg" href="fevicon.jpg"
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="intro-screen">
+        <h1 class="typewriter"></h1>
+        <p class="welcome-text">Welcome to my website</p>
+        <h1>Hi, I am Pawan</h1>
+        <p>Welcome to my website</p>       
+    </div>
+    <header>
+        <div class="header-container">
+            <h1>Pawan Shrestha</h1>
+            
+            <button class="mode-toggle" aria-label="Toggle dark mode">☀</button>
+            <button class="menu-toggle">☰</button>
+           
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Pawan Shrestha. I’m passionate about building beautiful, functional things—whether it’s code, design, or something else entirely. Take a look at my work below!</p>
+    </section>
+    <section class="projects" id="projects">
+        <div class="project-card" data-id="1">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <h3>Project One</h3>
+            <p>A sleek website built with HTML and CSS. Simple, yet elegant.</p>
+        </div>
+        <div class="project-card" data-id="2">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>An interactive app with JavaScript and a modern UI.</p>
+        </div>
+        <div class="project-card" data-id="3">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>A creative design experiment with bold visuals.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>
+            Get in touch: 
+            <a href="mailto:shresthapawan57@gmail.com">shresthapawan57@gmail.com</a>
+        </p>
+        <p>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+                © 
+            </a>2025 Pawan Shrestha</p>
+        
+    </footer>
+    
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Project Preview" class="modal-image">
+            <h3 class="modal-title"></h3>
+            <p class="modal-desc"></p>
+        </div>
+    </div>
+    <div class="ai-chatbot-widget">
+        <div class="ai-chatbot-bubble">🤖</div>
+        <div class="ai-chatbot-window" id="ai-chatbot-window">
+            <div class="ai-chatbot-header">AI Assistant</div>
+            <div class="ai-chatbot-messages" id="ai-chatbot-messages"></div>
+            <form class="ai-chatbot-input">
+                <input type="text" id="ai-chatbot-input" placeholder="Ask me anything...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@google/generative-ai"></script>
+    <script>
+      const genAI = new google.generativeai.GenerativeModel({ model: "gemini-pro" });
+      console.log(genAI);
+    </script>      
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>  
+</body>
+</html>
